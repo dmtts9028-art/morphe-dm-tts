@@ -6,7 +6,7 @@ smali = "4220ae75f7"
 gson = "2.15.0"
 annotation = "1.9.1"
 appcompat = "1.7.1"
-jna = "5.17.0"
+jna = "5.19.1"
 
 [libraries]
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

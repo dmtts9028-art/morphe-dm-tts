@@ -16,7 +16,8 @@ android {
 }
 
 dependencies {
-    compileOnly(libs.morphe.extensions.library)
+    // Runtime dependency: shared Utils/Logger must be inside the .mpe (loaded at runtime).
+    implementation(libs.morphe.extensions.library)
     compileOnly(libs.annotation)
     compileOnly(libs.appcompat)
 

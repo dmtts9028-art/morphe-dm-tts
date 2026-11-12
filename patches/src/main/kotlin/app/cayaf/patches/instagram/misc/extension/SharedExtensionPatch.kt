@@ -12,6 +12,6 @@ import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 @Suppress("unused")
 val sharedExtensionPatch =
     sharedExtensionPatch(
-        listOf("shared", "instagram"),
+        listOf("instagram"),
         instagramInitHook,
     )

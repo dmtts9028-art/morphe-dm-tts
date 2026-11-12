@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
-# Creates the GitHub Releases asset layout the in-app downloader expects:
-#   SHA256SUMS.txt + the four model files, uploaded flat to a release tagged `model`.
+# License-conformant model distribution for the DM TTS patch (phonon-40m-multilingual,
+# CC BY-NC 4.0 © Gradium — redistribution of unmodified copies for non-commercial use).
+#
+# Preferred path: the in-app downloader with the user's own Hugging Face token (Réglages DM TTS
+# → Avancé), pointing modelUrl at any HF repo, e.g. https://huggingface.co/dmtts/<repo>/resolve/main/
+# — each user accepts the gated terms individually. No mirror needed.
+#
+# Fallback path (this script): a SHA256SUMS-pinned GitHub Releases mirror. Requires the gated
+# terms accepted once with an approved account. Upload layout expected by the app:
+#   SHA256SUMS.txt + the four model files, flat, on the release tagged `model-phonon-v1`.
 #
 # Usage: tools/make-model-release.sh /path/to/phonon-40m-multilingual
 set -euo pipefail

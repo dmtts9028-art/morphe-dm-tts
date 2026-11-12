@@ -36,6 +36,7 @@ object Constants {
     const val MESSAGE_TTS_DESCRIPTOR = "$TTS_PACKAGE/MessageTtsView;"
     const val TTS_SETTINGS_DESCRIPTOR = "$TTS_PACKAGE/TtsSettingsDialog;"
     const val TTS_VOICE_EXPORT_DESCRIPTOR = "$TTS_PACKAGE/VoiceNoteExport;"
+    const val TTS_ACTION_BAR_DESCRIPTOR = "$TTS_PACKAGE/TtsActionBar;"
 
     // Instagram classes.
     const val USER_SESSION_CLASS = "Lcom/instagram/common/session/UserSession;"

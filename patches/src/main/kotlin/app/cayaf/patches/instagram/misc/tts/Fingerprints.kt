@@ -36,3 +36,17 @@ internal object TextMessageBindFingerprint : Fingerprint(
         string("setOnClickListener"),
     ),
 )
+
+/** Voice-message row binder factory (pins `message_content_voice_bubble_container`). */
+internal object VoiceMessageBinderFingerprint : Fingerprint(
+    definingClass = "LX/03Pn;",
+)
+
+/** Fills the views of a voice message: the binder's void two-object method. */
+internal object VoiceMessageBindFingerprint : Fingerprint(
+    classFingerprint = VoiceMessageBinderFingerprint,
+    name = "AX2",
+    isStatic = false,
+    returnType = "V",
+    parameters = listOf("LX/0Ijp;", "LX/0pjd;"),
+)

@@ -36,5 +36,15 @@ val messageTtsPatch =
                 invoke-static {v0, v1}, Lapp/morphe/extension/instagram/tts/MessageTtsView;->onBind(Ljava/lang/Object;Ljava/lang/Object;)V
                 """,
             )
+
+            // Voice rows: collect their audio addresses for the cloning-reference export.
+            VoiceMessageBindFingerprint.method.addInstructions(
+                0,
+                """
+                move-object/from16 v0, p1
+                move-object/from16 v1, p2
+                invoke-static {v0, v1}, Lapp/morphe/extension/instagram/tts/VoiceNoteExport;->onVoiceBind(Ljava/lang/Object;Ljava/lang/Object;)V
+                """,
+            )
         }
     }
